@@ -77,6 +77,8 @@ joblib.dump(rf, "models/random_forest.pkl")
 
 print("Model saved to models/random_forest.pkl")
 
+joblib.dump(list(X.columns), "models/feature_columns.pkl")
+
 # =====================================
 # PREDICTIONS
 # =====================================
@@ -127,4 +129,6 @@ with open("results/metrics/random_forest_metrics.txt", "w", encoding="utf-8") as
 print("\nMetrics saved to:")
 print("results/metrics/random_forest_metrics.txt")
 
-np.savetxt("results/metrics/random_forest_confusion_matrix.csv", cm, delimiter=",", fmt="%d")
+np.savetxt(
+    "results/metrics/random_forest_confusion_matrix.csv", cm, delimiter=",", fmt="%d"
+)

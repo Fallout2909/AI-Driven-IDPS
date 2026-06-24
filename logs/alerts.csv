@@ -1,0 +1,2 @@
+Timestamp,Actual_Label,Predicted_Attack,Risk_Level,Blocked_IP
+2026-06-25 00:51:15.258447,DoS Hulk,DoS Hulk,HIGH,192.168.43.186
